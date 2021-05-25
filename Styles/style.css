@@ -1,0 +1,40 @@
+#my-main-title{
+    font-size: 25px;
+    text-align: center;
+    font-family: "Pattaya", sans-serif;
+    background-color: rgb(22, 152, 196);
+    text-shadow: 2px 2px 2px black;
+    color:white;
+}
+
+#main-description{
+    text-align: center;
+    background-color: rgb(22, 152, 196);
+    border: 2px black;
+    color: white;
+}
+
+#my-list{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+#list-title{
+    text-align: center;
+}
+
+#my-link{
+    text-align: center;
+}
+
+html{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(180, 215, 255);
+}
