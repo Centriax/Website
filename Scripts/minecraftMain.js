@@ -1,6 +1,6 @@
 let webIMG = document.querySelector('img');
-let webHEADING = document.querySelector('h1');
 let webBUTTON = document.querySelector('button');
+let webP = document.querySelector('#name');
 
 
 webIMG.onclick = function(){
@@ -19,8 +19,8 @@ function getUserName(){
         getUserName();
     }
     else{
-        localStorage.setItem('name', webName);
-        webHEADING.textContent = ("Hello " + webName);
+        localStorage.setItem('name_1', webName);
+       webP.textContent = ("Hello " + webName);
     }
 }
 
@@ -28,10 +28,13 @@ if(!localStorage.getItem('name')){
     getUserName();
 }
 else{
-    let webNAME_1 = localStorage.getItem('name'); 
-    webHEADING.textContent = ("Hello " + webNAME_1);
+    let webNAME_1 = localStorage.getItem('name_1'); 
+    webP.textContent = ("Hello " + webNAME_1);
 }
 
-webBUTTON.onclick = function(){
-    getUserName();
-}
+window.onload = function(){
+    webBUTTON.onclick = function(){
+        getUserName();
+        console.log('Wow!');
+    }
+};
